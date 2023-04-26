@@ -131,12 +131,14 @@ function App() {
             <Element name="section1" className="section1">
               <Paper elevation={16} style={{ height: "50%", width: "50%", backgroundColor: '#f5f5f5', padding: '16px', borderRadius: '30px' }} >
                 <h1>What do we do?</h1>
-                <p>Content for section 1 goes here!</p>
+                <p>We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
+                  more affordable vision.
+                </p>
               </Paper>
             </Element>
             <Element name="section2" className="section2">
-              <h1>Section 2</h1>
-              <p>Content for section 2 goes here</p>
+              <h1>How do we do it?</h1>
+              <p>By using technology and innovative logistics methods, we are able to reduce the vision price.</p>
             </Element>
             <Element name="section3" className="section3">
               <h1>Section 3</h1>
