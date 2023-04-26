@@ -129,19 +129,22 @@ function App() {
           </nav >
           <div className="sections-container">
             <Element name="section1" className="section1">
-              <Paper elevation={16} style={{ height: "50%", width: "50%", backgroundColor: '#f5f5f5', padding: '16px', borderRadius: '30px' }} >
+              <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
                 <h1>What do we do?</h1>
-                <p>We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
+                <p>
+                  We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
                   more affordable vision.
                 </p>
               </Paper>
             </Element>
             <Element name="section2" className="section2">
               <h1>How do we do it?</h1>
-              <p>By using technology and innovative logistics methods, we are able to reduce the vision price.</p>
+              <p>
+                By using technology and innovative logistics methods, we are able to reduce the vision price.
+              </p>
             </Element>
             <Element name="section3" className="section3">
-              <h1>Section 3</h1>
+              <h1>Who we are and why</h1>
               <p>Content for section 3 goes here</p>
             </Element>
           </div>
