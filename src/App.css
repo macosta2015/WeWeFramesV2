@@ -31,6 +31,7 @@ nav a.active {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
 }
 
@@ -59,12 +60,10 @@ p {
 img {
     border: 1% solid #ddd;
     border-radius: 40px;
-    padding: 5px;
+    /* padding: 5px; */
     height: 70%;
     width: auto;
     vertical-align: middle;
-    horizontal-align: middle;
-
 }
 
 
