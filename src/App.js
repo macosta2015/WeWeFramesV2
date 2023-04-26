@@ -4,8 +4,7 @@ import './App.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from "@material-ui/core/Drawer";
 import Paper from '@mui/material/Paper';
-import Avatar from '@material-ui/core/Avatar';
-
+import imageUrl from './resources/WeFrames.jpg'
 
 
 function App() {
@@ -137,7 +136,7 @@ function App() {
                   We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
                   more affordable vision.
                 </p>
-                <Avatar alt="John Doe" src="/path/to/image.jpg" />
+                <img src={imageUrl} />
               </Paper>
             </Element>
             <Element name="section2" className="section2">

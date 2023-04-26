@@ -50,6 +50,23 @@ nav a.active {
     align-items: center;
 }
 
+p {
+    color: #587D71;
+    /* text-align: center; */
+    font-size: 24px;
+}
+
+img {
+    border: 1% solid #ddd;
+    border-radius: 40px;
+    padding: 5px;
+    height: 70%;
+    width: auto;
+    vertical-align: middle;
+    horizontal-align: middle;
+
+}
+
 
 /* Styles for mobile */
 @media (max-width: 768px) {
