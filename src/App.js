@@ -5,6 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from "@material-ui/core/Drawer";
 import Paper from '@mui/material/Paper';
 import imageUrl from './resources/WeFrames.jpg'
+import { Fade } from '@material-ui/core';
 
 
 function App() {
@@ -130,20 +131,39 @@ function App() {
           </nav >
           <div className="sections-container">
             <Element name="section1" className="section1">
-              <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
+              <Fade in={true} timeout={1000}>
+                <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
+                  <h1>What do we do?</h1>
+                  <p>
+                    We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
+                    more affordable vision.
+                  </p>
+                  <img src={imageUrl} />
+                </Paper>
+              </Fade>
+            </Element>
+            <Element name="section2" className="section2">
+              <Paper
+                elevation={16}
+                style={{
+                  height: "70%",
+                  width: "70%",
+                  backgroundColor: '#f5f5f5',
+                  padding: '32px',
+                  borderRadius: '50px',
+                  float: 'left', // Add this line to move the Paper element to the right
+                }}
+              >
                 <h1>What do we do?</h1>
                 <p>
                   We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
                   more affordable vision.
                 </p>
                 <img src={imageUrl} />
+                <img src={imageUrl} />
+                <img src={imageUrl} />
+
               </Paper>
-            </Element>
-            <Element name="section2" className="section2">
-              <h1>How do we do it?</h1>
-              <p>
-                By using technology and innovative logistics methods, we are able to reduce the vision price.
-              </p>
             </Element>
             <Element name="section3" className="section3">
               <h1>Who we are and why</h1>
