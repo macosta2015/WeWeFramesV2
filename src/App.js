@@ -160,8 +160,6 @@ function App() {
                   more affordable vision.
                 </p>
                 <img src={imageUrl} />
-                <img src={imageUrl} />
-                <img src={imageUrl} />
 
               </Paper>
             </Element>
