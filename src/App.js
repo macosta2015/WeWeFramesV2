@@ -158,8 +158,11 @@ function App() {
               >
                 <h1>How we do it?</h1>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <p style={{ marginRight: '16px', width: '70%' }}>
-                    We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve their life by having a more affordable vision.
+                  <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
+                    We use 3D printing to quickly design and build the frames.
+                    <span style={{ display: 'block', height: '40px' }}></span>
+                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                   </p>
                   <img
                     src={imageEnder}
@@ -174,27 +177,6 @@ function App() {
                 </div>
               </Paper>
             </Element>
-            {/* <Element name="section2" className="section2">
-              <Paper
-                elevation={16}
-                style={{
-                  height: "70%",
-                  width: "70%",
-                  backgroundColor: '#f5f5f5',
-                  padding: '32px',
-                  borderRadius: '50px',
-                  float: 'left', // Add this line to move the Paper element to the right
-                }}
-              >
-                <h1>What do we do?</h1>
-                <p>
-                  We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
-                  more affordable vision.
-                </p>
-                <img src={imageUrl} />
-
-              </Paper>
-            </Element> */}
             <Element name="section3" className="section3">
               <h1>Who we are and why</h1>
               <p>Content for section 3 goes here</p>
