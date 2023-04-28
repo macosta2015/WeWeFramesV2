@@ -142,7 +142,7 @@ function App() {
                 </Paper>
               </Fade>
             </Element>
-            <Element name="section2" className="section2">
+            <Element name="section2" className="section2" style={{ position: 'relative' }}>
               <Paper
                 elevation={16}
                 style={{
@@ -154,12 +154,21 @@ function App() {
                   float: 'left',
                 }}
               >
-                <h1>What do we do?</h1>
+                <h1>How we do it?</h1>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <p style={{ marginRight: '16px', width: '70%' }}>
                     We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve their life by having a more affordable vision.
                   </p>
-                  <img src={imageUrl} style={{ height: '100%', borderRadius: '50%', width: '30%' }} />
+                  <img
+                    src={imageUrl}
+                    style={{
+                      height: '50%',
+                      width: '25%',
+                      transition: 'transform 0.3s ease-in-out',
+                    }}
+                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
+                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                  />
                 </div>
               </Paper>
             </Element>
