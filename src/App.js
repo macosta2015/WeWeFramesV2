@@ -151,6 +151,27 @@ function App() {
                   backgroundColor: '#f5f5f5',
                   padding: '32px',
                   borderRadius: '50px',
+                  float: 'left',
+                }}
+              >
+                <h1>What do we do?</h1>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <p style={{ marginRight: '16px', width: '70%' }}>
+                    We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve their life by having a more affordable vision.
+                  </p>
+                  <img src={imageUrl} style={{ height: '100%', borderRadius: '50%', width: '30%' }} />
+                </div>
+              </Paper>
+            </Element>
+            {/* <Element name="section2" className="section2">
+              <Paper
+                elevation={16}
+                style={{
+                  height: "70%",
+                  width: "70%",
+                  backgroundColor: '#f5f5f5',
+                  padding: '32px',
+                  borderRadius: '50px',
                   float: 'left', // Add this line to move the Paper element to the right
                 }}
               >
@@ -162,7 +183,7 @@ function App() {
                 <img src={imageUrl} />
 
               </Paper>
-            </Element>
+            </Element> */}
             <Element name="section3" className="section3">
               <h1>Who we are and why</h1>
               <p>Content for section 3 goes here</p>
