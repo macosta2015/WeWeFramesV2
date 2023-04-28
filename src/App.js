@@ -5,6 +5,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from "@material-ui/core/Drawer";
 import Paper from '@mui/material/Paper';
 import imageUrl from './resources/WeFrames.jpg'
+import imageEnder from './resources/Ender3.png'
+
 import { Fade } from '@material-ui/core';
 
 
@@ -160,7 +162,7 @@ function App() {
                     We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve their life by having a more affordable vision.
                   </p>
                   <img
-                    src={imageUrl}
+                    src={imageEnder}
                     style={{
                       height: '50%',
                       width: '25%',
