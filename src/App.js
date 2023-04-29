@@ -157,7 +157,7 @@ function App() {
                 }}
               >
                 <h1>How we do it?</h1>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', flexDirection: 'row' }}> {/* Add flex direction column */}
                   <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
                     We use 3D printing to quickly design and build the frames.
                     <span style={{ display: 'block', height: '40px' }}></span>
@@ -168,13 +168,19 @@ function App() {
                     src={imageEnder}
                     style={{
                       height: '50%',
-                      width: '25%',
+                      width: '30%',
                       transition: 'transform 0.3s ease-in-out',
                     }}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                   />
-                </div>
+                </div> {/* Close the flexbox div */}
+                <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
+                  We use 3D printing to quickly design and build the frames.
+                  <span style={{ display: 'block', height: '40px' }}></span>
+                  3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                  With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                </p>
               </Paper>
             </Element>
             <Element name="section3" className="section3">
