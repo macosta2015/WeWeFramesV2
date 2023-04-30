@@ -8,6 +8,8 @@ import imageUrl from './resources/WeFrames.jpg'
 import imageEnder from './resources/Ender3.png'
 
 import { Fade } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
+
 
 
 function App() {
@@ -160,33 +162,46 @@ function App() {
                 <div style={{ display: 'flex', flexDirection: 'row' }}> {/* Add flex direction column */}
                   <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
                     We use 3D printing to quickly design and build the frames.
-                    <span style={{ display: 'block', height: '40px' }}></span>
+                    <span style={{ display: 'block', height: 'px' }}></span>
                     3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
                     With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                   </p>
                   <img
                     src={imageEnder}
                     style={{
-                      height: '50%',
-                      width: '30%',
+                      height: '25%',
+                      width: '25%',
                       transition: 'transform 0.3s ease-in-out',
                     }}
                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                    className="responsive-image"
                   />
                 </div> {/* Close the flexbox div */}
                 <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
                   We use 3D printing to quickly design and build the frames.
-                  <span style={{ display: 'block', height: '40px' }}></span>
+                  <span style={{ display: 'block', height: '20px' }}></span>
                   3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
                   With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                 </p>
               </Paper>
             </Element>
-            <Element name="section3" className="section3">
-              <h1>Who we are and why</h1>
-              <p>Content for section 3 goes here</p>
-            </Element>
+            {/* <Element name="section3" className="section2" style={{ position: 'relative' }}> */}
+            <Grid container>
+              <Grid item md={3}>
+                <Paper>1</Paper>
+              </Grid>
+              <Grid item md={3}>
+                <Paper>2</Paper>
+              </Grid>
+              <Grid item md={3}>
+                <Paper>3</Paper>
+              </Grid>
+              <Grid item md={3}>
+                <Paper>4</Paper>
+              </Grid>
+            </Grid>
+            {/* </Element> */}
           </div>
         </div >
       )

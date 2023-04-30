@@ -95,34 +95,4 @@ img {
         background-color: #555;
     }
 
-    /* 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav a {
-        margin: 10px 0;
-    }
-
-    .sections-container {
-        margin-top: 40px;
-    }
-
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    .toggle-button {
-        display: right;
-        right: 10rem;
-
-    } */
-
-
 }
