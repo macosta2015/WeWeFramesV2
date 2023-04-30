@@ -188,16 +188,16 @@ function App() {
             </Element>
             {/* <Element name="section3" className="section2" style={{ position: 'relative' }}> */}
             <Grid container>
-              <Grid item md={3}>
+              <Grid item xs={12} md={3}>
                 <Paper>1</Paper>
               </Grid>
-              <Grid item md={3}>
+              <Grid item xs={12} md={3}>
                 <Paper>2</Paper>
               </Grid>
-              <Grid item md={3}>
+              <Grid item xs={12} md={3}>
                 <Paper>3</Paper>
               </Grid>
-              <Grid item md={3}>
+              <Grid item xs={12} md={3}>
                 <Paper>4</Paper>
               </Grid>
             </Grid>
