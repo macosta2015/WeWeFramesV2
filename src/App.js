@@ -186,9 +186,30 @@ function App() {
                 </p>
               </Paper>
             </Element>
-            {/* <Element name="section3" className="section3" style={{ position: 'relative' }}> */}
-            <Grid container className="section3">
-              <Grid item xs={12} md={6} spacing={0}>
+            <Grid container direction={'row'} className="section3">
+              <Grid item xl={6} xs={12} md={6} lg={6}>
+                <Paper style={{
+                  display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
+                }}>
+                  <p style={{ textAlign: 'center' }}>
+                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                  </p>
+                </Paper>
+              </Grid>
+              <Grid item xl={6} xs={12} md={6} lg={6}>
+                <Paper style={{
+                  display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
+                }}>
+                  <p style={{ textAlign: 'center' }}>
+                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                  </p>
+                </Paper>
+              </Grid>
+            </Grid>
+            {/* <Grid container direction={'rows'} spacing={100} className="section3">
+              <Grid item xs={12} md={6}>
                 <Paper
                   style={{
                     height: "500px",
@@ -203,7 +224,7 @@ function App() {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={6} spacing={0}>
+              <Grid item xs={12} md={6}>
                 <Paper
                   style={{
                     height: "100%",
@@ -218,14 +239,13 @@ function App() {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={6} spacing={0}>
+              <Grid item xs={12} md={6}>
                 <Paper>3</Paper>
               </Grid>
-              <Grid item xs={12} md={6} spacing={0}>
+              <Grid item xs={12} md={6}>
                 <Paper>4</Paper>
               </Grid>
-            </Grid>
-            {/* </Element> */}
+            </Grid> */}
           </div>
         </div >
       )
