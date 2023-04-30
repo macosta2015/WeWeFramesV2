@@ -8,7 +8,9 @@ import Paper from '@mui/material/Paper';
 //Images
 import imageUrl from './resources/WeFrames.jpg'
 import imageEnder from './resources/Ender3.png'
-// import marioAcosta from './resources/MarioAcosta.png'
+import marioAcosta from './resources/Mario\'sProfilePhoto.jpg';
+import mariaJose from './resources/Majo\'sProfilePhoto.jpg';
+
 
 
 import { Fade } from '@material-ui/core';
@@ -213,7 +215,7 @@ function App() {
                   background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
                   <Stack direction="row" style={{ position: 'absolute', top: '15%' }}>
-                    <Avatar alt="Majo Cespedes" src="/static/images/avatar/1.jpg" style={{ width: '100px', height: '100px' }} />
+                    <Avatar alt="Majo Cespedes" src={marioAcosta} style={{ width: '200px', height: '200px' }} />
                   </Stack>
                   <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                     <p>
@@ -238,7 +240,7 @@ function App() {
                   background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
                   <Stack direction="row" style={{ position: 'absolute', top: '15%' }}>
-                    <Avatar alt="Majo Cespedes" src="/static/images/avatar/1.jpg" style={{ width: '100px', height: '100px' }} />
+                    <Avatar alt="Majo Cespedes" src={mariaJose} style={{ width: '200px', height: '200px' }} />
                   </Stack>
                   <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                     <p>
