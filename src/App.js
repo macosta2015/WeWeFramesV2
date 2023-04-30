@@ -187,18 +187,31 @@ function App() {
               </Paper>
             </Element>
             <Grid container direction={'row'} className="section3">
-              <Grid item xl={6} xs={12} md={6} lg={6}>
+              <Grid item xl={6} xs={12} md={6} lg={6}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '75%',
+                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
+                }}>
                 <Paper style={{
                   display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <p style={{ textAlign: 'center' }}>
+                  <p style={{ textAlign: 'top' }}>
                     3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
                     With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xl={6} xs={12} md={6} lg={6}>
-                <Paper style={{
+              <Grid item xl={6} xs={12} md={6} lg={6}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '75%',
+                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
+                }}>                <Paper style={{
                   display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
                   <p style={{ textAlign: 'center' }}>
@@ -208,44 +221,6 @@ function App() {
                 </Paper>
               </Grid>
             </Grid>
-            {/* <Grid container direction={'rows'} spacing={100} className="section3">
-              <Grid item xs={12} md={6}>
-                <Paper
-                  style={{
-                    height: "500px",
-                    width: "100%",
-                  }}
-                >
-                  <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
-                    We use 3D printing to quickly design and build the frames.
-                    <span style={{ display: 'block', height: '20px' }}></span>
-                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                  </p>
-                </Paper>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Paper
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                  }}
-                >
-                  <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
-                    We use 3D printing to quickly design and build the frames.
-                    <span style={{ display: 'block', height: '20px' }}></span>
-                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                  </p>
-                </Paper>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Paper>3</Paper>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Paper>4</Paper>
-              </Grid>
-            </Grid> */}
           </div>
         </div >
       )
