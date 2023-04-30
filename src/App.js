@@ -133,7 +133,6 @@ function App() {
           </div>
         </div >
       ) : (
-        // When it becomes a large screen
         <div className="App">
           <nav>
             <div className="nav-items">
@@ -170,14 +169,25 @@ function App() {
                   float: 'left',
                 }}
               >
-                <h1>How we do it?</h1>
+                <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%', color: '#587D71' }}>
+                  How we do it?
+                </Typography>
                 <div style={{ display: 'flex', flexDirection: 'row' }}> {/* Add flex direction column */}
-                  <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
+                  <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                    <p>
+                      <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
+                        We use 3D printing to quickly design and build the frames.
+                        <span style={{ display: 'block', height: 'px' }}></span>
+                        3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                        With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                      </p>                    </p>
+                  </Typography>
+                  {/* <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
                     We use 3D printing to quickly design and build the frames.
                     <span style={{ display: 'block', height: 'px' }}></span>
                     3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
                     With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                  </p>
+                  </p> */}
                   <img
                     src={imageEnder}
                     style={{
@@ -189,7 +199,7 @@ function App() {
                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                     className="responsive-image"
                   />
-                </div> {/* Close the flexbox div */}
+                </div>
                 <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
                   We use 3D printing to quickly design and build the frames.
                   <span style={{ display: 'block', height: '20px' }}></span>
