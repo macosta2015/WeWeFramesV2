@@ -186,18 +186,42 @@ function App() {
                 </p>
               </Paper>
             </Element>
-            {/* <Element name="section3" className="section2" style={{ position: 'relative' }}> */}
-            <Grid container>
-              <Grid item xs={12} md={3}>
-                <Paper>1</Paper>
+            {/* <Element name="section3" className="section3" style={{ position: 'relative' }}> */}
+            <Grid container className="section3">
+              <Grid item xs={12} md={6} spacing={0}>
+                <Paper
+                  style={{
+                    height: "500px",
+                    width: "100%",
+                  }}
+                >
+                  <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
+                    We use 3D printing to quickly design and build the frames.
+                    <span style={{ display: 'block', height: '20px' }}></span>
+                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                  </p>
+                </Paper>
               </Grid>
-              <Grid item xs={12} md={3}>
-                <Paper>2</Paper>
+              <Grid item xs={12} md={6} spacing={0}>
+                <Paper
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                  }}
+                >
+                  <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
+                    We use 3D printing to quickly design and build the frames.
+                    <span style={{ display: 'block', height: '20px' }}></span>
+                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
+                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                  </p>
+                </Paper>
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={6} spacing={0}>
                 <Paper>3</Paper>
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={6} spacing={0}>
                 <Paper>4</Paper>
               </Grid>
             </Grid>
