@@ -4,11 +4,21 @@ import './App.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from "@material-ui/core/Drawer";
 import Paper from '@mui/material/Paper';
+
+//Images
 import imageUrl from './resources/WeFrames.jpg'
 import imageEnder from './resources/Ender3.png'
+// import marioAcosta from './resources/MarioAcosta.png'
+
 
 import { Fade } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+
+//Avatars
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+
+import Typography from '@mui/material/Typography';
 
 
 
@@ -193,15 +203,23 @@ function App() {
                   justifyContent: 'center',
                   alignItems: 'center',
                   height: '75%',
-                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
                 <Paper style={{
-                  display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
+                  display: 'flex',
+                  justifyContent: 'center',
+                  position: 'relative',
+                  alignItems: 'center',
+                  height: '100%',
+                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <p style={{ textAlign: 'center', verticalAlign: 'top', lineHeight: '1.2em', fontSize: '1.2em' }}>
-                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                  </p>
+                  <Stack direction="row" style={{ position: 'absolute', top: '15%' }}>
+                    <Avatar alt="Majo Cespedes" src="/static/images/avatar/1.jpg" style={{ width: '100px', height: '100px' }} />
+                  </Stack>
+                  <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                    <p>
+                      Hi, my name is Mario Acosta. I am a Mechanical Engineer. I am passionate of doing creative work by using technologies like 3D printing and software development.
+                    </p>
+                  </Typography>
                 </Paper>
               </Grid>
               <Grid item xl={6} xs={12} md={6} lg={6}
@@ -210,15 +228,23 @@ function App() {
                   justifyContent: 'center',
                   alignItems: 'center',
                   height: '75%',
-                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
                 <Paper style={{
-                  display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
+                  display: 'flex',
+                  justifyContent: 'center',
+                  position: 'relative',
+                  alignItems: 'center',
+                  height: '100%',
+                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <p style={{ textAlign: 'center', display: 'table-cell', verticalAlign: 'top' }}>
-                    3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                    With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                  </p>
+                  <Stack direction="row" style={{ position: 'absolute', top: '15%' }}>
+                    <Avatar alt="Majo Cespedes" src="/static/images/avatar/1.jpg" style={{ width: '100px', height: '100px' }} />
+                  </Stack>
+                  <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                    <p>
+                      Hi, my name is Mario Acosta. I am a Mechanical Engineer. I am passionate of doing creative work by using technologies like 3D printing and software development.
+                    </p>
+                  </Typography>
                 </Paper>
               </Grid>
             </Grid>
