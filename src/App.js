@@ -198,7 +198,7 @@ function App() {
                 <Paper style={{
                   display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <p style={{ textAlign: 'top' }}>
+                  <p style={{ textAlign: 'center', verticalAlign: 'top', lineHeight: '1.2em', fontSize: '1.2em' }}>
                     3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
                     With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                   </p>
@@ -211,10 +211,11 @@ function App() {
                   alignItems: 'center',
                   height: '75%',
                   background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
-                }}>                <Paper style={{
+                }}>
+                <Paper style={{
                   display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <p style={{ textAlign: 'center' }}>
+                  <p style={{ textAlign: 'center', display: 'table-cell', verticalAlign: 'top' }}>
                     3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
                     With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                   </p>
