@@ -151,37 +151,27 @@ function App() {
                   <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
                     What do we do?
                   </Typography>
-                  <p>
-                    We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
-                    more affordable vision.
-                  </p>
+                  <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                    <p>
+                      We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
+                      more affordable vision.
+                    </p>
+                  </Typography>
                   <img src={imageUrl} />
                 </Paper>
               </Fade>
             </Element>
 
             {/* SECTION 2 */}
-            <Element name="section2" className="section2" style={{ position: 'relative' }}>
-              <Paper
-                elevation={16}
-                style={{
-                  height: "70%",
-                  width: "70%",
-                  backgroundColor: '#f5f5f5',
-                  padding: '32px',
-                  borderRadius: '50px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'center'
-                }}
-              >
+            <Element name="section2" className="section2">
+              <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
+
                 <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
                   How we do it?
                 </Typography>
-                <Grid container spacing={0} style={{ marginBottom: '0%', width: '80%' }}>
+                <Grid container style={{ marginBottom: '0%', width: '100%' }}>
                   <Grid item xl={6} xs={12} md={12} lg={6} >
-                    <Typography variant="h3" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                    <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                       <p style={{ marginRight: '16px', width: '100%', marginBottom: '2%' }}>
                         We use 3D printing to quickly design and build the frames.
                         <span style={{ display: 'block', height: '5px' }}></span>
@@ -194,7 +184,7 @@ function App() {
                     <img
                       src="https://media.tenor.com/AteWDUebhk4AAAAd/3dprint-3d-printing.gif"
                       style={{
-                        maxWidth: '70%',
+                        maxWidth: '65%',
                         height: '70%',
                         transition: 'transform 0.3s ease-in-out',
                       }}
@@ -206,58 +196,6 @@ function App() {
                 </Grid>
               </Paper>
             </Element>
-
-
-            {/* <Element name="section2" className="section2" style={{ position: 'relative' }}>
-              <Paper
-                elevation={16}
-                style={{
-                  height: "70%",
-                  width: "70%",
-                  backgroundColor: '#f5f5f5',
-                  padding: '32px',
-                  borderRadius: '50px',
-                  float: 'left',
-                }}
-              >
-                <Grid container spacing={10}>
-                  <Grid item xl={12} xs={12} md={12} lg={12}>
-                    <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%', color: '#587D71' }}>
-                      How we do it?
-                    </Typography>
-                  </Grid>
-                  <Grid item xl={6} xs={12} md={12} lg={6}>
-                    <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-                      <p style={{ marginRight: '16px', width: '70%', marginBottom: '1em' }}>
-                        We use 3D printing to quickly design and build the frames.
-                        <span style={{ display: 'block', height: 'px' }}></span>
-                        3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                        With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                      </p>
-                    </Typography>
-                  </Grid>
-                  <Grid item xl={6} xs={12} md={12} lg={6}>
-                    <img
-                      src="https://media.tenor.com/AteWDUebhk4AAAAd/3dprint-3d-printing.gif"
-                      style={{
-                        transition: 'transform 0.3s ease-in-out',
-                      }}
-                      onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
-                      onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                      className="responsive-image"
-                    />
-                  </Grid>
-                  <Grid item xl={12} xs={12} md={12} lg={12}>
-                    <p style={{ marginRight: '16px', width: '100%', marginBottom: '1em' }}>
-                      We use 3D printing to quickly design and build the frames.
-                      <span style={{ display: 'block', height: '20px' }}></span>
-                      3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                      With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                    </p>
-                  </Grid>
-                </Grid>
-              </Paper>
-            </Element> */}
             <Grid container direction={'row'} className="section3">
               <Grid item xl={6} xs={12} md={6} lg={6}
                 style={{

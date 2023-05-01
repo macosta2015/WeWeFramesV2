@@ -36,10 +36,12 @@ nav a.active {
 }
 
 .section2 {
-    background-color: #5d7a71;
+    background-color: #587D71;
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
 }
 
