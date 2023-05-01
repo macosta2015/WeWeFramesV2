@@ -149,6 +149,7 @@ function App() {
       ) : (
         <div className="App">
           <nav>
+            {/* NAVIGATION BAR 1 */}
             <div className="nav-items">
               <Link activeClass="active" to="section1" spy={true} smooth={true} duration={500} offset={-70}>
                 <Typography variant="h6">
@@ -169,6 +170,7 @@ function App() {
               <i className="fas fa-chevron-down"></i>
             </Link>
           </nav >
+          {/* SECTION 1 */}
           <div className="sections-container">
             <Element name="section1" className="section1">
               <Fade in={true} timeout={1000}>
@@ -186,7 +188,6 @@ function App() {
                 </Paper>
               </Fade>
             </Element>
-
             {/* SECTION 2 */}
             <Element name="section2" className="section2">
               <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
@@ -220,6 +221,7 @@ function App() {
                 </Grid>
               </Paper>
             </Element>
+            {/* SECTION 3 */}
             <Grid container direction={'row'} className="section3">
               <Grid item xl={12} xs={12} md={12} lg={12}>
                 <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
