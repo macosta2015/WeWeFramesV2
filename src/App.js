@@ -58,9 +58,7 @@ function App() {
           {/* Beginning of the Navbar */}
           <nav>
             <div className="toggle-button">
-              {/* <p>The light is {isOn ? 'on' : 'off'}</p> */}
               <MenuIcon onClick={handleClick} style={{ fontSize: 40 }} />
-              {/* <Drawer open={isOn} onClick={handleDrawerClick}> */}
               <Drawer
                 open={isOn}
                 onClick={handleDrawerClick}
@@ -87,7 +85,12 @@ function App() {
                         fontSize: '18px',
                         fontWeight: 'bold'
                       }}>
-                      What do we do?</Link>
+                      <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                        <p className='linkText'>
+                          What do we do?
+                        </p>
+                      </Typography>
+                    </Link>
                     <Link activeClass="active" to="section2" spy={true} smooth={true} duration={1000} offset={-70}
                       onClick={() => setIsOn(false)}
                       style={{
@@ -98,7 +101,12 @@ function App() {
                         fontSize: '18px',
                         fontWeight: 'bold'
                       }}>
-                      How we do it?</Link>
+                      <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                        <p className='linkText'>
+                          How we do it?
+                        </p>
+                      </Typography>
+                    </Link>
                     <Link activeClass="active" to="section3" spy={true} smooth={true} duration={1000} offset={-70}
                       onClick={() => setIsOn(false)}
                       style={{
@@ -108,7 +116,13 @@ function App() {
                         color: 'white',
                         fontSize: '18px',
                         fontWeight: 'bold'
-                      }}>Who are we?</Link>
+                      }}>
+                      <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                        <p className='linkText'>
+                          Who are we?
+                        </p>
+                      </Typography>
+                    </Link>
                   </div> : 'off'}
               </Drawer>
             </div>
@@ -136,9 +150,20 @@ function App() {
         <div className="App">
           <nav>
             <div className="nav-items">
-              <Link activeClass="active" to="section1" spy={true} smooth={true} duration={500} offset={-70}>What do we do?</Link>
-              <Link activeClass="active" to="section2" spy={true} smooth={true} duration={500} offset={-70}>How we do it?</Link>
-              <Link activeClass="active" to="section3" spy={true} smooth={true} duration={500} offset={-70}>Who are we?</Link>
+              <Link activeClass="active" to="section1" spy={true} smooth={true} duration={500} offset={-70}>
+                <Typography variant="h6">
+                  What do we do?
+                </Typography>              </Link>
+              <Link activeClass="active" to="section2" spy={true} smooth={true} duration={500} offset={-70}>
+                <Typography variant="h6">
+                  How we do it?
+                </Typography>
+              </Link>
+              <Link activeClass="active" to="section3" spy={true} smooth={true} duration={500} offset={-70}>
+                <Typography variant="h6">
+                  Who are we?
+                </Typography>
+              </Link>
             </div >
             <Link activeClass="active" to="section1" spy={true} smooth={true} duration={500} offset={-70}>
               <i className="fas fa-chevron-down"></i>
@@ -165,7 +190,6 @@ function App() {
             {/* SECTION 2 */}
             <Element name="section2" className="section2">
               <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
-
                 <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
                   How we do it?
                 </Typography>
@@ -197,6 +221,11 @@ function App() {
               </Paper>
             </Element>
             <Grid container direction={'row'} className="section3">
+              <Grid item xl={12} xs={12} md={12} lg={12}>
+                <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
+                  Who are we?
+                </Typography>
+              </Grid>
               <Grid item xl={6} xs={12} md={6} lg={6}
                 style={{
                   display: 'flex',
