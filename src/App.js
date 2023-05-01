@@ -148,7 +148,9 @@ function App() {
             <Element name="section1" className="section1">
               <Fade in={true} timeout={1000}>
                 <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
-                  <h1>What do we do?</h1>
+                  <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
+                    What do we do?
+                  </Typography>
                   <p>
                     We are a prohumanitarian organization with the goal of helping as many kids and elderly to improve there life by having a
                     more affordable vision.
