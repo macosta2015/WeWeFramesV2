@@ -301,37 +301,9 @@ function App() {
                   height: '100%',
                   background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <Stack direction="row" style={{ position: 'absolute', top: '15%' }}>
-                    <Avatar alt="Majo Cespedes" src={marioAcosta} style={{ width: '200px', height: '200px' }} />
-                  </Stack>
                   <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                     <p>
-                      Hi, my name is Mario Acosta. I am a Mechanical Engineer. I am passionate of doing creative work by using technologies like 3D printing and software development.
-                    </p>
-                  </Typography>
-                </Paper>
-              </Grid>
-              <Grid item xl={6} xs={12} md={6} lg={6}
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  height: '75%',
-                }}>
-                <Paper style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  position: 'relative',
-                  alignItems: 'center',
-                  height: '100%',
-                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
-                }}>
-                  <Stack direction="row" style={{ position: 'absolute', top: '15%' }}>
-                    <Avatar alt="Majo Cespedes" src={mariaJose} style={{ width: '200px', height: '200px' }} />
-                  </Stack>
-                  <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-                    <p>
-                      Hi, my name is Mario Acosta. I am a Mechanical Engineer. I am passionate of doing creative work by using technologies like 3D printing and software development.
+                      Fillout form
                     </p>
                   </Typography>
                 </Paper>
