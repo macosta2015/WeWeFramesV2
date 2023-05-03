@@ -458,7 +458,7 @@ function App() {
                   alignItems: 'center',
                   height: '75%',
                 }}>
-                <Paper style={{
+                {/* <Paper style={{
                   display: 'flex',
                   justifyContent: 'center',
                   position: 'relative',
@@ -466,11 +466,11 @@ function App() {
                   height: '80%',
                   width: '100%',
                   background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
-                }}>
-                  <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-                    <ContactUs />
-                  </Typography>
-                </Paper>
+                }}> */}
+                <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                  <ContactUs />
+                </Typography>
+                {/* </Paper> */}
               </Grid>
             </Grid>
           </div >
