@@ -131,30 +131,8 @@ function App() {
             </Link>
           </nav >
           {/* End of the Navbar */}
-
           <div className="App">
-            <nav>
-              {/* NAVIGATION BAR 1 */}
-              <div className="nav-items">
-                <Link activeClass="active" to="section1" spy={true} smooth={true} duration={500} offset={-70}>
-                  <Typography variant="h6">
-                    What do we do?
-                  </Typography>              </Link>
-                <Link activeClass="active" to="section2" spy={true} smooth={true} duration={500} offset={-70}>
-                  <Typography variant="h6">
-                    How we do it?
-                  </Typography>
-                </Link>
-                <Link activeClass="active" to="section3" spy={true} smooth={true} duration={500} offset={-70}>
-                  <Typography variant="h6">
-                    Who are we?
-                  </Typography>
-                </Link>
-              </div >
-              <Link activeClass="active" to="section1" spy={true} smooth={true} duration={500} offset={-70}>
-                <i className="fas fa-chevron-down"></i>
-              </Link>
-            </nav >
+
             {/* SECTION 1 */}
             < div className="sections-container" >
               <Element name="section1" className="section1">
@@ -301,8 +279,6 @@ function App() {
               </Grid>
             </div >
           </div >
-
-
 
 
         </div >
