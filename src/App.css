@@ -54,6 +54,15 @@ nav a.active {
     align-items: center;
 }
 
+.section4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 p {
     color: #587D71;
     font-size: 24px;

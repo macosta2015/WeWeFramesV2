@@ -122,6 +122,22 @@ function App() {
                         </p>
                       </Typography>
                     </Link>
+                    <Link activeClass="active" to="section4" spy={true} smooth={true} duration={1000} offset={-70}
+                      onClick={() => setIsOn(false)}
+                      style={{
+                        display: 'block',
+                        margin: '10px 0',
+                        textDecoration: 'none',
+                        color: 'white',
+                        fontSize: '18px',
+                        fontWeight: 'bold'
+                      }}>
+                      <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                        <p className='linkText'>
+                          Contact Information
+                        </p>
+                      </Typography>
+                    </Link>
                   </div> : 'off'}
               </Drawer>
             </div>
@@ -166,10 +182,10 @@ function App() {
                       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                         <p style={{ marginRight: '16px', width: '100%', marginBottom: '2%' }}>
                           We use 3D printing to quickly design and build the frames.
-                          <span style={{ display: 'block', height: '5%' }}>
-                          </span>
+
                         </p>
                         <p className="responsiveText" style={{ marginRight: '16px', width: '100%', marginBottom: '2%' }}>
+                          <br></br>
                           3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make cool shapes or objects.
                           With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
                         </p>
@@ -254,10 +270,10 @@ function App() {
               </Grid>
             </Grid>
             {/* SECTION 4/EMAIL */}
-            <Grid container direction={'row'} className="section3">
+            <Grid container direction={'row'} className="section4">
               <Grid item xl={12} xs={12} md={12} lg={12}>
                 <Typography variant="h2" style={{ color: '#587D71' }}>
-                  Email
+                  Contact Information
                 </Typography>
               </Grid>
               <Grid item xl={5} xs={10} md={5} lg={5}
@@ -302,6 +318,11 @@ function App() {
                 </Typography>
               </Link>
               <Link activeClass="active" to="section3" spy={true} smooth={true} duration={500} offset={-70}>
+                <Typography variant="h6">
+                  Who are we?
+                </Typography>
+              </Link>
+              <Link activeClass="active" to="section4" spy={true} smooth={true} duration={500} offset={-70}>
                 <Typography variant="h6">
                   Who are we?
                 </Typography>
@@ -426,10 +447,10 @@ function App() {
               </Grid>
             </Grid>
             {/* SECTION 4/EMAIL */}
-            <Grid container direction={'row'} className="section3">
+            <Grid container direction={'row'} className="section4">
               <Grid item xl={12} xs={12} md={12} lg={12}>
                 <Typography variant="h2" style={{ color: '#587D71' }}>
-                  Email
+                  Contact Information
                 </Typography>
               </Grid>
               <Grid item xl={5} xs={10} md={5} lg={5}
