@@ -302,9 +302,6 @@ function App() {
                   height: '70%',
                   background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
                 }}>
-                  <Stack direction="row" style={{ position: 'absolute' }}>
-                    <Avatar alt="Majo Cespedes" src={marioAcosta} />
-                  </Stack>
                   <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                     <p>
                       Hi, my name is Mario Acosta. I am a Mechanical Engineer. I am passionate of doing creative work by using technologies like 3D printing and software development.
