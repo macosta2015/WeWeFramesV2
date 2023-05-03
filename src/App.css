@@ -71,8 +71,17 @@ img {
     margin: auto;
 }
 
+.responsiveText {
+    display: block;
+    margin: auto;
+}
+
 @media only screen and (max-width: 768px) {
     .responsive-img {
+        display: none;
+    }
+
+    .responsiveText {
         display: none;
     }
 }

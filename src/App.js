@@ -156,27 +156,32 @@ function App() {
             </Element>
             {/* SECTION 2 */}
             <Element name="section2" className="section2">
-              <Paper elevation={16} style={{ height: "70%", width: "70%", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }} >
-                <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
+              <Paper elevation={16} style={{ height: "70%", width: "90%", maxWidth: "800px", margin: "0 auto", backgroundColor: '#f5f5f5', padding: '32px', borderRadius: '50px' }}>
+                <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71', textAlign: 'center' }}>
                   How we do it?
                 </Typography>
-                <Grid container style={{ marginBottom: '0%', width: '100%' }}>
-                  <Grid item xl={6} xs={12} md={12} lg={6} >
-                    <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-                      <p style={{ marginRight: '16px', width: '100%', marginBottom: '2%' }}>
-                        We use 3D printing to quickly design and build the frames.
-                        <span style={{ display: 'block', height: '5px' }}></span>
-                        3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make a cool shapes or objects.
-                        With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
-                      </p>
+                <Grid container style={{ marginBottom: '0%', width: '100%' }} justify="space-between">
+                  <Grid item sm={12} md={6}>
+                    <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%', textAlign: 'center' }}>
+                      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                        <p style={{ marginRight: '16px', width: '100%', marginBottom: '2%' }}>
+                          We use 3D printing to quickly design and build the frames.
+                          <span style={{ display: 'block', height: '5%' }}>
+                          </span>
+                        </p>
+                        <p className="responsiveText" style={{ marginRight: '16px', width: '100%', marginBottom: '2%' }}>
+                          3D printing is like playing with Lego blocks. You can stack different blocks on top of each other to make cool shapes or objects.
+                          With 3D printing, instead of blocks, we use a special machine that can put together tiny bits of plastic or other materials, layer by layer, to create the shape we want.
+                        </p>
+                      </div>
                     </Typography>
                   </Grid>
-                  <Grid item xl={6} xs={12} md={12} lg={6} style={{ marginBottom: '-5%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <Grid item sm={12} md={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <img
                       src="https://media.tenor.com/AteWDUebhk4AAAAd/3dprint-3d-printing.gif"
                       style={{
-                        maxWidth: '65%',
-                        height: '70%',
+                        width: '100%',
+                        height: 'auto',
                         transition: 'transform 0.3s ease-in-out',
                       }}
                       onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
@@ -186,6 +191,7 @@ function App() {
                   </Grid>
                 </Grid>
               </Paper>
+
             </Element>
             {/* SECTION 3 */}
             <Grid container direction={'row'} className="section3">
