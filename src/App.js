@@ -283,7 +283,7 @@ function App() {
             <Grid container direction={'row'} className="section3">
               <Grid item xl={12} xs={12} md={12} lg={12}>
                 <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}>
-                  Who are we?
+                  Contact Information
                 </Typography>
               </Grid>
               <Grid item xl={6} xs={12} md={6} lg={6}
