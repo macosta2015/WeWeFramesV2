@@ -1,3 +1,6 @@
+//We were having problems for the .env files. We moved the .env to the 'root folder' and followed
+//the instructions on: https://stackoverflow.com/questions/59911706/module-not-found-error-cant-resolve-fs-in-node-modules-dotenv-lib
+
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactUs.css';
@@ -7,8 +10,11 @@ import Typography from '@mui/material/Typography';
 import ThemeContext from '../ThemeContext';
 
 
-// require('dotenv').config();
-
+// .env files
+console.log(process.env)
+const firstEmail = process.env.REACT_APP_YOUR_SERVICE_ID
+const secondEmail = process.env.REACT_APP_YOUR_TEMPLATE_ID
+const thirdEmail = process.env.REACT_APP_YOUR_PUBLIC_KEY
 
 
 export default function ContactUs() {
@@ -21,7 +27,7 @@ export default function ContactUs() {
 
         e.preventDefault(); //This is important, I'm not sure why, but the email won't send without it
 
-        emailjs.sendForm('service_cxrroqf', 'template_dorbgjd', e.target, 'UnWqfvtRRN9xr1VS4')
+        emailjs.sendForm(firstEmail, secondEmail, e.target, thirdEmail)
             .then(
                 (result) => {
                     console.log(result.text);
