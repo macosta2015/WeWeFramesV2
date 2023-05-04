@@ -23,6 +23,10 @@ import Typography from '@mui/material/Typography';
 //Import email component
 import ContactUs from './components/email.js';
 
+//React context.js
+// import dotenv from 'dotenv';
+import ThemeContext from './ThemeContext';
+
 
 function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -51,8 +55,10 @@ function App() {
     };
   }, []);
 
-  return (
+  return (<ThemeContext.Provider value={process.env.REACT_APP_MY_VAR}>
+
     <div>
+
       {isSmallScreen ? (
         <div className="App">
           {/* Beginning of the Navbar */}
@@ -457,7 +463,10 @@ function App() {
         </div >
       )
       }
+
     </div >
+  </ThemeContext.Provider>
+
   );
 }
 

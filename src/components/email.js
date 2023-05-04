@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactUs.css';
 import Typography from '@mui/material/Typography';
 
+//Importing from React context
+import ThemeContext from '../ThemeContext';
+
+
+// require('dotenv').config();
+
+
 
 export default function ContactUs() {
 
+    const myVar = React.useContext(ThemeContext);
+    console.log('TEST ' + myVar)
+
     function sendEmail(e) {
+
+
         e.preventDefault(); //This is important, I'm not sure why, but the email won't send without it
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        emailjs.sendForm('service_cxrroqf', 'template_dorbgjd', e.target, 'UnWqfvtRRN9xr1VS4')
             .then(
                 (result) => {
                     console.log(result.text);
