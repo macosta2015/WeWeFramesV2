@@ -3,7 +3,7 @@
 
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import './ContactUs.css';
+import './email.css';
 import Typography from '@mui/material/Typography';
 
 //Importing from React context
