@@ -5,6 +5,8 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './email.css';
 import Typography from '@mui/material/Typography';
+import { Grid } from '@material-ui/core';
+
 
 //Importing from React context
 import ThemeContext from '../ThemeContext';
@@ -41,9 +43,11 @@ export default function ContactUs() {
     return (
         <div className="contact-container">
             <form className="contact-form" onSubmit={sendEmail}>
-                <Typography variant="h2" style={{ color: '#587D71' }}>
-                    Contact Inforamtion
-                </Typography>
+                <Grid item xl={12} xs={12} md={12} lg={12}>
+                    <Typography variant="h2" style={{ color: '#587D71' }}>
+                        Contact Inforamtion
+                    </Typography>
+                </Grid>
                 <div className="form-inputs">
                     <div className="form-group">
                         <input type="text" name="from_name" placeholder="Your Name" />

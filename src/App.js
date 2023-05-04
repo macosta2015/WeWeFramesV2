@@ -453,7 +453,7 @@ function App() {
                   alignItems: 'center',
                   height: '75%',
                 }}>
-                <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
+                <Typography variant="h2" style={{ color: '#587D71' }}>
                   <ContactUs />
                 </Typography>
                 {/* </Paper> */}
