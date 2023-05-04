@@ -1,8 +1,10 @@
+.env
+
+
 node_modules
 
 package-lock.json
 
-env
 # EMAILS KEYS
 YOUR_SERVICE_ID=service_cxrroqf
 YOUR_TEMPLATE_ID=template_dorbgjd
