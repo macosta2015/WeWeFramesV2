@@ -1,6 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './ContactUs.css';
+import Typography from '@mui/material/Typography';
+
 
 export default function ContactUs() {
 
@@ -21,7 +23,9 @@ export default function ContactUs() {
     return (
         <div className="contact-container">
             <form className="contact-form" onSubmit={sendEmail}>
-                <h2>Contact Us</h2>
+                <Typography variant="h2" style={{ color: '#587D71' }}>
+                    Contact Inforamtion
+                </Typography>
                 <div className="form-inputs">
                     <div className="form-group">
                         <input type="text" name="from_name" placeholder="Your Name" />

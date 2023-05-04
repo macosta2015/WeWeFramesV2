@@ -271,11 +271,6 @@ function App() {
             </Grid>
             {/* SECTION 4/EMAIL */}
             <Grid container direction={'row'} className="section4">
-              <Grid item xl={12} xs={12} md={12} lg={12}>
-                <Typography variant="h2" style={{ color: '#587D71' }}>
-                  Contact Information
-                </Typography>
-              </Grid>
               <Grid item xl={5} xs={10} md={5} lg={5}
                 style={{
                   display: 'flex',
@@ -324,7 +319,7 @@ function App() {
               </Link>
               <Link activeClass="active" to="section4" spy={true} smooth={true} duration={500} offset={-70}>
                 <Typography variant="h6">
-                  Who are we?
+                  Contact Information
                 </Typography>
               </Link>
             </div >
@@ -386,7 +381,6 @@ function App() {
             {/* SECTION 3 */}
             <Grid container direction={'row'} className="section3">
               <Grid item xl={12} xs={12} md={12} lg={12}>
-                {/* <Typography variant="h2" style={{ marginBottom: '2.5%', color: '#587D71' }}> */}
                 <Typography variant="h2" style={{ color: '#587D71' }}>
                   Who are we?
                 </Typography>
@@ -446,11 +440,6 @@ function App() {
             </Grid>
             {/* SECTION 4/EMAIL */}
             <Grid container direction={'row'} className="section4">
-              <Grid item xl={12} xs={12} md={12} lg={12}>
-                <Typography variant="h2" style={{ color: '#587D71' }}>
-                  Contact Information
-                </Typography>
-              </Grid>
               <Grid item xl={5} xs={10} md={5} lg={5}
                 style={{
                   display: 'flex',
@@ -458,15 +447,6 @@ function App() {
                   alignItems: 'center',
                   height: '75%',
                 }}>
-                {/* <Paper style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  position: 'relative',
-                  alignItems: 'center',
-                  height: '80%',
-                  width: '100%',
-                  background: "linear-gradient(green 1px, transparent 1px), linear-gradient(90deg, green 1px, transparent 1px)",
-                }}> */}
                 <Typography variant="h2" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                   <ContactUs />
                 </Typography>
